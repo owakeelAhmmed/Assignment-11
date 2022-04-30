@@ -3,7 +3,7 @@ import './Home.css'
 import img1 from '../images/headerimg.jpg'
 const Home = () => {
     return (
-        <div className='container'>
+        <section className=' home-section container'>
              <div className="row mt-5">
                 <div className="col-6 text-start mt-5">
                     <h1 className="">Welcome To Our MediHouse</h1>
@@ -14,7 +14,7 @@ const Home = () => {
                     <img className='img-fluid' src={img1} alt="" />
                 </div> 
             </div>
-        </div>
+        </section>
     );
 };
 

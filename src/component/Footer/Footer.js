@@ -9,7 +9,7 @@ const Footer = () => {
 
 
     return (
-        <div className="">
+        <div className="bg-primary h-5">
             <small>
                 &copy; Copyright {year}
             </small>

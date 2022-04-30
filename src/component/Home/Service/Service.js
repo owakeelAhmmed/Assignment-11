@@ -4,7 +4,7 @@ import React from 'react';
 const Service = ({ service }) => {
     const {name, price, picture, description, quantity, suppliername} = service;
     return (
-        <div className="mt-5 col-lg-4">
+        <div className="mt-5 col-sm-12 col-lg-4">
             <div className="card" style={{ width: "18rem"}} >
                 <img src={picture} alt="" />
                 <div className="card-body">
