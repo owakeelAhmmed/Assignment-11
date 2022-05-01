@@ -10,8 +10,6 @@ const useCard = () => {
         
     }, []);
     
-    
-    console.log(cards);
     return [cards, setCards];
 };
 

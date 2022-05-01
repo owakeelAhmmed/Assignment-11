@@ -27,10 +27,13 @@ const [cards, setCards] = useCard();
             
 
            
-             <div className="">
+            <div className="">
+                <h1>
+                    My <span>Cata</span><span>Log</span>
+                </h1>
                     <div className="row ">
                         {
-                            cards.slice(0,6).map(card => <Service service={card} />)
+                            cards.slice(0,6).map(card => <Service key={card.id} service={card} />)
                         }
                     </div>
                 <button className='btn btn-danger rounded-pill'> <Link className="text-white text-decoration-none"to='/services'>See All</Link></button>
