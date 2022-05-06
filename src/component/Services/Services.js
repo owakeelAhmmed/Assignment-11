@@ -9,7 +9,7 @@ const Services = () => {
 
 
     return (
-        <div className="container">
+        <div className=" serv-section container">
             <div className="row">
                 {
                     cards.map(service => <Service

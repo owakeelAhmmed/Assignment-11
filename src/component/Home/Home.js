@@ -16,7 +16,7 @@ const [cards, setCards] = useCard();
                         <div className=" col-sm-12 col-lg-4 text-start mt-5 me-5">
                             <h1 className="">Welcome To Our MediHouse</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta voluptatum maxime eligendi molestiae ullam eaque voluptate necessitatibus magnam praesentium.</p>
-                            <button className="btn btn-primary rounded-pill">Buy Now</button>   
+                            <button className="btn btn-primary rounded-pill">Order Now</button>   
                         </div>
                         <div className=" col-sm-12 col-lg-6">
                             <img className='img-fluid' src={img1} alt="" />

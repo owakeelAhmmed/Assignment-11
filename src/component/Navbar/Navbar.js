@@ -1,12 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../images/logo-1.png'
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { auth } from '../../firebase.init';
+
+
+
+
+
 const Navbar = () => {
+  const [user, setUser] = useState({});
+
+          useEffect(() => {
+              onAuthStateChanged(auth, (user) => {
+              if (user) {
+              setUser(user);
+              } else {
+                setUser({});
+              }
+              });
+        },[])
+
+  const handlelogout = () => {
+       signOut(auth).then(() => {
+       
+      }).catch((error) => {
+      
+      });
+     }
+  
+  
+  
+  
+  
+
+
     return (
         <div>
-            <nav className=" nav-header navbar navbar-expand-lg navbar-light ">
-        <div className="container-fluid container">
+          <nav className=" fixed-top bg-primary nav-header navbar navbar-expand-lg navbar-light ">
+            <div className="container-fluid container">
             <Link className="navbar-brand" to="/">
               <img style={{ width:'160px'}} src={logo} alt="" />
           </Link>
@@ -28,12 +61,14 @@ const Navbar = () => {
                 <Link className="nav-link active text-black" to="/about">About</Link>
               </li>
 
-              <li className="nav-item">
-                <Link className="nav-link active text-black" to="/login">Login</Link>
-              </li>
+              
             </ul>
            
-          </div>
+            </div>
+            <nav className="nav-item">
+              {user?.uid ? <button onClick={handlelogout} className=" btn btn-danger"> logout </button> : <Link className="nav-link active text-white" to="/login">Login</Link>}
+              </nav>
+            <p>{ user?.displayName}</p>
         </div>
     </nav>
         </div>

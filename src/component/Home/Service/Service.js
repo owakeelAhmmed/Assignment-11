@@ -13,7 +13,10 @@ const Service = ({ service }) => {
                     <p className="card-text">{ description }</p>
                     <p className="card-text">Price: { price }</p>
                     <p className="card-text">Quantity: { quantity }</p>
-                    <button className='btn btn-primary'>Buy Now</button>
+                    <div className='d-flex justify-content-between'>
+                        <button className='btn btn-primary fw-bold'>AddItem</button>
+                        <button className='btn btn-primary fw-bold'>Delete</button>
+                    </div>
                 </div>
             </div>
         </div>
