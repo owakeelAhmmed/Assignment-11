@@ -8,11 +8,16 @@ import Navbar from './component/Navbar/Navbar';
 import Notfound from './component/Notfound/Notfound';
 import Register from './component/Register/Register';
 import Services from './component/Services/Services';
+import Update from './component/Update/Update';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
+      
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/services" element={
@@ -22,6 +27,8 @@ function App() {
         }/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
+        <Route path="/update" element={<Update/>}/>
+
         <Route path="/*" element={<Notfound/>}/>
       </Routes>
       <Footer/>

@@ -1,4 +1,4 @@
-import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import {  GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase.init';
@@ -13,7 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
 
 
-const googleAuth = () => {
+  const googleAuth = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user;
@@ -25,7 +25,22 @@ const googleAuth = () => {
         const credential = GoogleAuthProvider.credentialFromError(error);
       
       });
-}
+  };
+
+  const handleLogIn = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+   signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    const user = userCredential.user;
+    navigate("/")
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
+  };
 
 
 
@@ -33,7 +48,7 @@ const googleAuth = () => {
         <div className='auth-form-container '>
       <div className='auth-form'>
         <h1>Login</h1>
-        <form >
+        <form onSubmit={handleLogIn} >
           <div className='input-field'>
             <label htmlFor='email'>Email</label>
             <div className='input-wrapper'>

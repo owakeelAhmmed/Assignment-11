@@ -14,7 +14,7 @@ const [cards, setCards] = useCard();
             <section className='home-section'>
                     <div className="row mt-5">
                         <div className=" col-sm-12 col-lg-4 text-start mt-5 me-5">
-                            <h1 className="">Welcome To Our MediHouse</h1>
+                            <h1 className=""> <span className='text-danger'>Welcome</span> To Our <span className='fw-bold'>MediHouse</span> </h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta voluptatum maxime eligendi molestiae ullam eaque voluptate necessitatibus magnam praesentium.</p>
                             <button className="btn btn-primary rounded-pill">Order Now</button>   
                         </div>

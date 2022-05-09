@@ -1,5 +1,5 @@
-import React from 'react';
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import React, { useState } from 'react';
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase.init';
 
@@ -8,18 +8,13 @@ import { auth } from '../../firebase.init';
 const provider = new GoogleAuthProvider();
 
 
-
-
-
-
-
-
-
-
-
 const Register = () => {
-
 const navigate = useNavigate();
+  const [email, setEmail] = useState({ value: "", error: "" });
+  const [password, setPassword] = useState({ value: "", error: "" });
+  const [confirmPassword, setconfirmPassword] = useState({ value: "", error: "" });
+
+console.log(email);
 
 
   const googleAuth = () => {
@@ -27,11 +22,10 @@ const navigate = useNavigate();
 
     signInWithPopup(auth, provider)
       .then((result) => {
-       
-        
         const user = result.user;
         navigate('/');
-      }).catch((error) => {
+      })
+      .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         const email = error.email;
@@ -41,30 +35,80 @@ const navigate = useNavigate();
   };
 
 
+  const handleRegister = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+    createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    const user = userCredential.user;
+    navigate('/');
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
+  };
+
+   const handleEmail = (event) => {
+    const emailInput = event.target.value;
+    if (/\S+@\S+\.\S+/.test(emailInput)) {
+      setEmail({ value: emailInput, error: "" });
+    } else {
+      setEmail({ value: "", error: "Please Enter a valid Email" });
+    }
+  };
+
+  const handlePassword = (event) => {
+    const passwordInput = event.target.value;
+    if (passwordInput.length < 8) {
+      setPassword({ value: "", error: "Password 6" });
+      
+    } else {
+      setPassword({ value: "passwordInput", error: "" });
+      
+    }
+  }
+
+  const handleConfirmPassword = (ConfirmPasswordInput) => {
+    setconfirmPassword(ConfirmPasswordInput);
+  }
+
 
     return (
-           <div className='auth-form-container '>
+           <div className='form-container '>
       <div className='auth-form'>
         <h1>Register</h1>
-        <form >
+        <form onSubmit={handleRegister}>
           <div className='input-field'>
             <label htmlFor='email'>Email</label>
             <div className='input-wrapper'>
-              <input type='text' name='email'  id='email' />
+              <input onChange={handleEmail} type='text' name='email'  id='email'  required/>
+              </div>
+              {
+                email?.error && <p className='text-danger'>{email.error}</p>
+              }
+            
             </div>
             
-          </div>
           <div className='input-field'>
             <label htmlFor='password'>Password</label>
             <div className='input-wrapper'>
-              <input
-                type='password'
-                name='password'
-                id='password'
-              />
+              <input onChange={handlePassword} type='password' name='password' id='password' required/>
             </div>
-           
+              {
+                password.error && <p className='text-danger'>{password.error}</p>
+            }
           </div>
+          
+             <div className='input-field'>
+            <label htmlFor='confirm-password'>Confirm Password</label>
+            <div className='input-wrapper'>
+              <input onBlur={handleConfirmPassword} type='password' name='confirmPassword' id='confirm-password' required/>
+            </div>
+            </div>
+
+
           <button type='submit' className='auth-form-submit'>
             Login
           </button>

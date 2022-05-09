@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
 
-
-const Service = ({ service }) => {
+const Updatecard = ({ service }) => {
     const {name, price, picture, description, quantity, suppliername} = service;
-    const navigate = useNavigate();
+
+
+
     return (
         <div className="mt-5 col-sm-12 col-lg-4">
             <div className="card" style={{ width: "18rem"}} >
@@ -16,11 +16,8 @@ const Service = ({ service }) => {
                     <p className="card-text">Price: { price }</p>
                     <p className="card-text">Quantity: { quantity }</p>
                     <div className='d-flex justify-content-between'>
-                        <button className='btn btn-primary fw-bold'>Delete</button>
-                        {/* <button className='btn btn-primary fw-bold' > */}
-                            <Link className="btn btn-primary text-white fw-bold nav-link active text-black" to="/update">Update</Link>
-                            
-                       
+                        <button className='btn btn-primary fw-bold'>Delevery</button>
+                        
                     </div>
                 </div>
             </div>
@@ -28,4 +25,4 @@ const Service = ({ service }) => {
     );
 };
 
-export default Service;
+export default Updatecard;
