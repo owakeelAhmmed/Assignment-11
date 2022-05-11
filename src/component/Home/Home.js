@@ -35,8 +35,9 @@ const [cards, setCards] = useCard();
                         {
                             cards.slice(0,6).map(card => <Service key={card.id} service={card} />)
                         }
-                    </div>
-                <button className='btn btn-danger rounded-pill'> <Link className="text-white text-decoration-none"to='/services'>See All</Link></button>
+                </div>
+                <Link to='/services'><button className='btn btn-danger rounded-pill'>See All</button></Link>
+                
              </div>
             
             

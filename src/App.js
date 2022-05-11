@@ -9,6 +9,8 @@ import Notfound from './component/Notfound/Notfound';
 import Register from './component/Register/Register';
 import Services from './component/Services/Services';
 import Update from './component/Update/Update';
+import Additem from './component/Additem/Additem';
+import Myitem from './component/Myitem/Myitem';
 
 
 
@@ -21,14 +23,20 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/services" element={
-          <RequirAuth>
+          
             <Services/>
-          </RequirAuth>
         }/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
-        <Route path="/update" element={<Update/>}/>
+        <Route path="/update" element={
+          <RequirAuth>
+            <Update />
+          </RequirAuth>
+        } />
+          
 
+        <Route path="/additem" element={<Additem/>}/> 
+        <Route path="/myitem" element={<Myitem/>}/> 
         <Route path="/*" element={<Notfound/>}/>
       </Routes>
       <Footer/>

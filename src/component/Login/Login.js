@@ -59,11 +59,7 @@ const Login = () => {
           <div className='input-field'>
             <label htmlFor='password'>Password</label>
             <div className='input-wrapper'>
-              <input
-                type='password'
-                name='password'
-                id='password'
-              />
+              <input type='password' name='password'id='password'/>
             </div>
            
           </div>

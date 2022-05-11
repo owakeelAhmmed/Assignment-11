@@ -52,13 +52,16 @@ const Navbar = () => {
                 <Link className="nav-link active text-black" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active text-black" to="/services">MyItems</Link>
+                <Link className="nav-link active text-black" to="/services">MyCataLog</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active text-black" to="/blogs">Blog</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active text-black" to="/about">About</Link>
+                <Link className="nav-link active text-black" to="/additem">Additem</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active text-black" to="/myitem">Myitem</Link>
               </li>
 
               
