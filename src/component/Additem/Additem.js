@@ -4,8 +4,6 @@ import '../Additem/Additem.css';
 
 
 
-
-
 const Additem = () => {
 
     const handleAddUser = event => {
@@ -30,8 +28,7 @@ const Additem = () => {
                 alert('Added Successfully')
                 event.target.reset();
         })
-
-}
+    }
 
 
 
