@@ -42,9 +42,14 @@ const Myitem = () => {
                     key={user._id}
                     >{user.name}
                     
-                        <button
-                            onClick={() => handleUserDelete(user._id)}
-                            className="btn btn-primary">delete</button>
+                        <button onClick={() => handleUserDelete(user._id)}className="btn btn-primary">delete</button>
+                        
+
+                        <Link to={`/updateuser/${user._id}`}>
+                        
+                            <button>Update</button>
+                        
+                        </Link>
                     
                     </p>)
                 }

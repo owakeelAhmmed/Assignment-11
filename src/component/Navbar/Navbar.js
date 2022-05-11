@@ -38,7 +38,7 @@ const Navbar = () => {
 
     return (
         <div>
-          <nav className=" fixed-top bg-primary nav-header navbar navbar-expand-lg navbar-light ">
+          <nav className=" fixed-top nav-style nav-header navbar navbar-expand-lg navbar-light ">
             <div className="container-fluid container">
             <Link className="navbar-brand" to="/">
               <img style={{ width:'160px'}} src={logo} alt="" />
@@ -63,6 +63,8 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link active text-black" to="/myitem">Myitem</Link>
               </li>
+              
+              
 
               
             </ul>
