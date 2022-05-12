@@ -9,8 +9,8 @@ const Footer = () => {
 
 
     return (
-        <div className="bg-primary h-5">
-            <small>
+        <div className="footer-container ">
+            <small className="footer-text fw-bold  fs-6">
                 &copy; Copyright {year}
             </small>
         </div>

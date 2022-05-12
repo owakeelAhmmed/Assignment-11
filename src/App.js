@@ -11,6 +11,8 @@ import Services from './component/Services/Services';
 import Myitem from './component/Myitem/Myitem';
 import Additem from './component/Additem/Additem';
 import UpdateUser from './component/UpdateUser/UpdateUser';
+import Blog from './component/Blog/Blog';
+
 
 
 
@@ -28,6 +30,7 @@ function App() {
         <Route path="/additem" element={<Additem/>}/> 
         <Route path="/updateuser/:id" element={<UpdateUser/>}/>     
         <Route path="/myitem" element={<Myitem/>}/> 
+        <Route path="/blog" element={<Blog/>}/> 
         <Route path="/*" element={<Notfound/>}/>
       </Routes>
       <Footer/>

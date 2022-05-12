@@ -1,0 +1,10 @@
+.blog{
+   
+    margin-top: 100px;
+}
+.blog-card{
+    border-radius: 15px;
+    background: linear-gradient(225deg, #f19898, #cb8080);
+    box-shadow:  -10px 10px 20px #b47272,
+             10px -10px 20px #ffaaaa;
+}
