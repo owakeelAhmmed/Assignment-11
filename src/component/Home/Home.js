@@ -4,6 +4,7 @@ import useCard from '../../Hooks/useCard';
 import Service from './Service/Service';
 import { Link } from 'react-router-dom';
 import Reviews from '../Reviews/Reviews';
+import CountactUs from '../ContactUs/CountactUs';
 
 
 const Home = () => {
@@ -39,10 +40,11 @@ const [cards, setCards] = useCard();
                 </div>
                 <Link to='/services'><button className='btn btn-danger rounded-pill'>See All</button></Link>
                 
-             </div>
+            </div>
+            
             <Reviews/>
             
-           
+           <CountactUs/>
         </section>
     );
 };

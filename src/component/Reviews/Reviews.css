@@ -1,14 +1,23 @@
-.card-imgs{
+
+
+.review-cont{
     
+    margin-top: 100px;
+}
+.cards-container{
+    margin-top: 100px;
+    
+}
+
+.card-imgs{
     width: 80px;
     height: 75px;
-    
 }
 .card-imgs img{
     border-radius: 50%;
 }
-
 .card-style{
+    
     background-color: rgb(255, 246, 246);
     border: none;
     border-radius: 15px;

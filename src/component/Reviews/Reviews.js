@@ -18,7 +18,7 @@ const Reviews = () => {
                 </h1>
             </div>
             
-      <div className="row row-cols-1 row-cols-md-3 mt-4 g-4">
+      <div className="cards-container row row-cols-1 row-cols-md-3  g-4">
                 <div className="col col-sm-12 col-lg-4">
                     <div className="card card-style h-100">
                         <div className="card-imgs mx-auto d-block p-1" alt>
