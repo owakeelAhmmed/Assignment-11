@@ -4,7 +4,7 @@ const useCard = () => {
 
     const [cards, setCards] = useState([]);
     useEffect(() => {
-        fetch('data.json')
+        fetch('http://localhost:4000/user')
         .then(Response => Response.json())
         .then(data => setCards(data))
         
