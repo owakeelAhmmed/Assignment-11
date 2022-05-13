@@ -52,14 +52,14 @@ const Login = () => {
           <div className='input-field'>
             <label htmlFor='email'>Email</label>
             <div className='input-wrapper'>
-              <input type='text' name='email'  id='email' />
+              <input type='text' name='email'  id='email' required />
             </div>
             
           </div>
           <div className='input-field'>
             <label htmlFor='password'>Password</label>
             <div className='input-wrapper'>
-              <input type='password' name='password'id='password'/>
+              <input type='password' name='password'id='password' required/>
             </div>
            
           </div>
@@ -68,7 +68,7 @@ const Login = () => {
           </button>
         </form>
         <p className='redirect'>
-          New to Tech Geeks?{" "}
+          If you first Medi-House?{" "}
           <Link className="nav-link active text-black" to="/register">create a new account</Link>
         </p>
         <div className='horizontal-divider'>

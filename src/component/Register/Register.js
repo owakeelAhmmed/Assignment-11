@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase.init';
-
+// import './Register.css';
 
 
 const provider = new GoogleAuthProvider();
@@ -76,7 +76,7 @@ console.log(email);
 
 
     return (
-           <div className='form-container '>
+     <div className='form-container container '>
       <div className='auth-form'>
         <h1>Register</h1>
         <form onSubmit={handleRegister}>

@@ -1,16 +1,19 @@
 import {useState, useEffect } from 'react';
 
 const useCard = () => {
-
-    const [cards, setCards] = useState([]);
+    const [products, setProducts] = useState([]);
+    console.log(products);
     useEffect(() => {
         fetch('http://localhost:4000/user')
         .then(Response => Response.json())
-        .then(data => setCards(data))
+        .then(data => setProducts(data))
         
     }, []);
     
-    return [cards, setCards];
+   
+    
+    return [products, setProducts];
+    
 };
 
 export default useCard;

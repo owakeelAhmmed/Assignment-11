@@ -13,9 +13,12 @@ const Reviews = () => {
     return (
         <div className=" review-cont mb-5">
             <div>
-                <h1 className="mb-5">
+                <h1 className="mb-3">
                     What Our Clients Says
                 </h1>
+                 <p className="text-white fw-bold">
+                    OUR CLIENT TESTIMONIALS. Customer satisfaction is a primary goal for our company. 
+                </p>
             </div>
             
       <div className="cards-container row row-cols-1 row-cols-md-3  g-4">

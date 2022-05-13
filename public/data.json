@@ -3,29 +3,29 @@
     "price": "$98",
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeZvlMOJ21HObAy46G1JKl5uidGO4vvfMCLg&usqp=CAU",
     "name": "Abacavir",
-    "description": "This medicine is usually taken one (1) time in the morning and one (1) time at night.Abacavir can be taken with or without food. Taking the medicine right after you have eaten a meal may help prevent upset stomach.",
+    "description": "This medicine is usually taken one (1) time in the morning and one (1) time at night.Abacavir can be taken with or without food.",
     "quantity": 23,
     "suppliername": "Hime"
   },
   {
     "price": "$68",
-    "picture": "http://www.squarepharma.com.bd/products/Camlosart-01_large.png",
+    "picture": "https://www.getwelloncology.com/images/product/Neomib-2-mg2.jpg",
     "name": "Bortezomib",
-    "description": "Loss of appetite (not as hungry as usual)Mild diarrhea, constipation, nausea, or vomitingPain, itching, burning, swelling, or a lump under your skin where the needle is placed, Fatigue, Fever",
+    "description": "Loss of appetite nausea, or burning, swelling, or a lump under your skin where the needle is placed, Fatigue, Fever",
     "quantity": 10,
     "suppliername": "Zelma Mccarthy"
   },
   {
     "price": "$72",
-    "picture": "https://www.squarepharma.com.bd/products/ENERTON-SYRUP.jpg",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9YQtrt6-qjHiNpc0ya4KHls7Cc5HxpDCEZQ&usqp=CAU",
     "name": "Cefixime",
     "description": "You may take cefixime with or without food. If you have stomach pain, take cefixime with food.",
-    "quantity": 10,
+    "quantity": 16,
     "suppliername": "Cathy Harrington"
   },
   {
     "price": "$94",
-    "picture": "https://www.squarepharma.com.bd/products/GAR_l.jpg",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVcjoKqZpIZaqjR2A1INla1FO5d3weUWxtkg&usqp=CAU",
     "name": "Darunavir (Prezista®)",
     "description": "This tablet is usually taken one (1) time each morning and one (1) time each evening.Darunavir should be taken with food.",
     "quantity": 25,
@@ -33,7 +33,7 @@
   },
   {
     "price": "$79",
-    "picture": "https://www.squarepharma.com.bd/products/Evit-Soft-400_l.jpg",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvmbHCKv_zZ9345ceHGQpEzeNquQlcL-iITA&usqp=CAU",
     "name": "Efavirenz",
     "description": "This medicine is taken once a day, usually at bedtime. It must be taken every day.",
     "quantity": 30,
@@ -43,7 +43,7 @@
     "price": "$87",
     "picture": "https://static.hungrynaki.com/hungrynaki-v4/restaurants/d_pharma/items/d_pharma_brofex_syrup_100ml_1_bottle_thumbnail_1628401821382.jpeg",
     "name": "Fidaxomicin",
-    "description": "Signs of an allergic reaction like wheezing; chest tightness; fever; itching; bad cough; blue skin color; seizures; or swelling of face, lips, tongue, or throat.",
+    "description": "Signs of an allergic reaction like fever; itching; seizures; or swelling of face, lips, tongue, or throat.",
     "quantity": 15,
     "suppliername": "Yates York"
   },
@@ -52,14 +52,14 @@
     "price": "$82",
     "picture": "https://images.deliveryhero.io/image/fd-BD/NV/products/ad320be54fe640c39cc89ddb47eea99531a0f441.jpg",
     "name": "Furosemide",
-    "description": "Feeling dizzy, Headache, Diarrhea (when taking the liquid medicine),Low blood pressure, High blood sugar Allergic reaction with the following symptoms: rash, hives swelling in the facial area.",
+    "description": "Feeling dizzy, Headache, Diarrhea (when taking the liquid medicine),Low blood pressure,",
     "quantity": 18,
     "suppliername": "Carolina Vang"
   },
   {
     
     "price": "$40",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDHgHCc_QKIPONWMohGF07TyB1BaGGeC8DMg&usqp=CAU",
     "name": "Gemtuzumab ozogamicin",
     "description": "Flu-like reaction, which may cause fever, chills, headache, shortness of breath, and dizziness",
     "quantity": 30,
@@ -68,7 +68,7 @@
   {
     
     "price": "$75",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7uB4WtelVd_8BYvz9OtLocu96Jywx6gQh4Q&usqp=CAU",
     "name": "Hydralazine",
     "description": "Low blood counts with an increased risk of bleeding, infection, and fatigue",
     "quantity": 36,
@@ -77,7 +77,7 @@
   {
     
     "price": "$78",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyEZEbmo9u03LxZ75GbTetCsFDuPzHDTU7yQ&usqp=CAU",
     "name": "Immune globulin",
     "description": "Muscle and joint pain, nausea and vomiting, plus skin rash (serum sickness)",
     "quantity": 24,
@@ -85,7 +85,7 @@
   },
   {
     "price": "$55",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHWGi9AGZfYLzYt3xk4OS8owQxLjzkCwhwPQ&usqp=CAU",
     "name": "Levothyroxine",
     "description": "You should take levothyroxine before breakfast to decrease trouble sleeping at night.",
     "quantity": 21,
@@ -93,26 +93,26 @@
   },
   {
     "price": "$54",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSorrmnO_Bt6lF094MQ_rXgrGhF02hPhScl6g&usqp=CAU",
     "name": "Mechlorethamine",
-    "description": "Mechlorethamine can cause nausea and vomiting. The doctor may prescribe medicine to keep you from feeling sick and throwing up after you receive mechlorethamine.",
+    "description": " The doctor may prescribe medicine to keep you from feeling sick and throwing up after you receive mechlorethamine.",
     "quantity": 40,
     "suppliername": "Waters Payne"
   },
   {
     "price": "$41",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KH4QbM8ZgseY7Mv5F6lyiLrWkkSbcBxB4A&usqp=CAU",
     "name": "Melphalan",
-    "description": "Allergic reaction: symptoms include rash, itching, swelling of the feet or ankles, trouble breathing, fast heart beat, or low blood pressure.",
+    "description": "Allergic reaction: symptoms include rash, itching, swelling of the feet or ankles, fast heart beat, or low blood pressure.",
     "quantity": 17,
     "suppliername": "Yolanda Small"
   },
   {
     
     "price": "$80",
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_admOD-E6Te3BOeU2X3-9KwUtT-NQqhdZQ&usqp=CAU",
     "name": "Metronidazole",
-    "description": "Take this medicine with or without food. If you have stomach upset, take metronidazole with food.Shake the liquid suspension well before you take it. Use a medicine cup or an oral syringe to measure your dose to make sure you are taking the correct amount.",
+    "description": "Take this medicine with or without food. If you have stomach upset, take metronidazole with food.",
     "quantity": 24,
     "suppliername": "Wiggins Vasquez"
   },
@@ -120,7 +120,7 @@
     "price": "$96",
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNb9grOQvVNAg1cqHPLeeHLX5F4WdYUJ3Oyw&usqp=CAU",
     "name": "Morphine",
-    "description": "If you are taking both the fast-acting and long-acting forms of morphine, you may only need to take the fast-acting form occasionally for “breakthrough” pain.",
+    "description": "If you are taking both the fast-acting and long-acting forms of morphine, you may only need to take the for “breakthrough” pain.",
     "quantity": 19,
     "suppliername": "Savannah Rojas"
   },
@@ -128,7 +128,7 @@
     "price": "$71",
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0veRX3R1KUHl-dgpdXnObsPrv78xQtQ9rOA&usqp=CAU",
     "name": "Nevirapine",
-    "description": "Rash (the most common side effect); If you experience any type of rash, stop taking nevirapine right away and call the doctor or nurse.",
+    "description": "Rash If you experience any type of rash, stop taking nevirapine right away and call the doctor or nurse.",
     "quantity": 31,
     "suppliername": "Kristen Norris"
   },
@@ -136,7 +136,7 @@
     "price": "$78",
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNubfJwsrjVfYcDFGTxRIXrVKT7ffKsfetdw&usqp=CAU",
     "name": "Oxycodone",
-    "description": "If you are taking oxycodone with acetaminophen, do not take extra acetaminophen (Tylenol®) or medicines containing acetaminophen. This could result in a dose of Tylenol® that is too high.",
+    "description": "If you are taking oxycodone with acetaminophen, do not take extra acetaminophen (Tylenol®) or medicines containing acetaminophen.",
     "quantity": 38,
     "suppliername": "Marissa Hall"
   },
@@ -144,7 +144,7 @@
     "price": "$65",
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRONd-557uxp_iwI-EDcT4jJaVpOvJtqlkKNw&usqp=CAU",
     "name": "Phenytoin",
-    "description": "You will receive one (1) injection 24 hours after your last dose of chemotherapy. A nurse will give you the medicine either in an inpatient room or in the Medicine Room.",
+    "description": "You will receive one (1) injection 24 hours after your last dose of chemotherapy. ",
     "quantity": 50,
     "suppliername": "Skinner Wall"
   },
@@ -152,7 +152,7 @@
     "price": "$68",
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ-VzkAs8itwTC5B2JQbPTOFj-OUUt59pXnA&usqp=CAU",
     "name": "Rivaroxaban",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta voluptatum maxime.",
+    "description": "You will receive one (1) injection 24 hours after your last dose of chemotherapy. A nurse will give you the medicine",
     "quantity": 48,
     "suppliername": "Audrey Burch"
   },
@@ -160,7 +160,7 @@
     "price": "$95",
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDpQ5ZwS-cObDcH37dXLY0TXoaYyt3WrGmCQ&usqp=CAU",
     "name": "",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta voluptatum maxime.",
+    "description": "If you are taking oxycodone with acetaminophen, do not take extra acetaminophen (Tylenol®) or medicines containing acetaminophen.",
     "quantity": 52,
     "suppliername": "Middleton Walsh"
   }

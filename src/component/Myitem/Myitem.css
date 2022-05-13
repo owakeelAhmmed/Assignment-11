@@ -1,0 +1,23 @@
+.myitem-cont{
+    margin-top: 150px;
+}
+.first-text-style{
+    background-color: #6c5ce7;
+    color: #fff;
+}
+.text-style{
+    color: #0984e3;
+}
+.card-container{
+    height: 500px;
+ 
+}
+.item-card{
+    border-radius: 19px;
+    background: #e18e8e;
+    box-shadow:  10px 10px 20px #b27070,
+                -10px -10px 20px #ffacac;
+}
+.item-ima img{
+    height: 130px;
+}

@@ -52,7 +52,7 @@ const Navbar = () => {
                 <Link className="nav-link active text-black" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active text-black" to="/services">MyCataLog</Link>
+                <Link className="nav-link active text-black" to="/mycatalog">MyCataLog</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active text-black" to="/blog">Blog</Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
             <nav className="nav-item">
               {user?.uid ? <button onClick={handlelogout} className=" btn btn-danger"> logout </button> : <Link className="nav-link active text-white" to="/login">Login</Link>}
               </nav>
-            <p>{ user?.displayName}</p>
+            {/* <p>{ user?.displayName}</p> */}
         </div>
     </nav>
         </div>

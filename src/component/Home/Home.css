@@ -4,5 +4,16 @@ body{
 }
 .home-section{
     margin-top: 150px;
-    height: 100vh;
+    margin-bottom: 150px;
+}
+
+.card-box{
+    height: 500px;
+    border-radius: 19px;
+    background: #e18e8e;
+    box-shadow:  10px 10px 20px #b27070,
+                -10px -10px 20px #ffacac;
+}
+.card-img img{
+    height: 130px;
 }

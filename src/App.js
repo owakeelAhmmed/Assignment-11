@@ -7,11 +7,11 @@ import RequirAuth from './component/Login/RequireAuth/RequireAuth';
 import Navbar from './component/Navbar/Navbar';
 import Notfound from './component/Notfound/Notfound';
 import Register from './component/Register/Register';
-import Services from './component/Services/Services';
 import Myitem from './component/Myitem/Myitem';
 import Additem from './component/Additem/Additem';
 import UpdateUser from './component/UpdateUser/UpdateUser';
 import Blog from './component/Blog/Blog';
+import Mycatalog from './component/Mycatalog/Mycatalog';
 
 
 
@@ -24,12 +24,28 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/services" element={<Services/>}/>
+        <Route path="/mycatalog" element={
+          <RequirAuth>
+            <Mycatalog />
+          </RequirAuth>
+          } />
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
-        <Route path="/additem" element={<Additem/>}/> 
-        <Route path="/updateuser/:id" element={<UpdateUser/>}/>     
-        <Route path="/myitem" element={<Myitem/>}/> 
+        <Route path="/additem" element={
+          <RequirAuth>
+            <Additem />
+          </RequirAuth>
+          } /> 
+        <Route path="/updateuser/:id" element={
+          <RequirAuth>
+            <UpdateUser />
+          </RequirAuth>
+        }/>     
+        <Route path="/myitem" element={
+          <RequirAuth>
+            <Myitem/>
+          </RequirAuth>
+        }/> 
         <Route path="/blog" element={<Blog/>}/> 
         <Route path="/*" element={<Notfound/>}/>
       </Routes>
