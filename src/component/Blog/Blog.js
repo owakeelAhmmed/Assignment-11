@@ -1,7 +1,7 @@
 import React from 'react';
 import './Blog.css';
 import img1 from '../images/javascript-vs-nodejs.png';
-import img2 from '../images/mongodb.png';
+import img2 from '../images/mongoimg.png';
 import img3 from '../images/sql.png';
 import img4 from '../images/jwt.png';
 

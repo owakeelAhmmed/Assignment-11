@@ -70,7 +70,8 @@ const Login = () => {
         <p className='redirect'>
           If you first Medi-House?{" "}
           <Link className="nav-link active text-black" to="/register">create a new account</Link>
-        </p>
+          </p>
+          <p>Reset Password</p>
         <div className='horizontal-divider'>
           <div className='line-left' />
           <p>or</p>

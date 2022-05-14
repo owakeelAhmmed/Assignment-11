@@ -20,6 +20,7 @@ console.log(email);
   const googleAuth = () => {
     
 
+
     signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user;
@@ -74,6 +75,9 @@ console.log(email);
     setconfirmPassword(ConfirmPasswordInput);
   }
 
+  const resetPassword = () => {
+
+  }
 
     return (
      <div className='form-container container '>
@@ -114,9 +118,12 @@ console.log(email);
           </button>
         </form>
         <p className='redirect'>
-          New to Tech Geeks?{" "}
+          New to Medi-House?{" "}
           <Link className="nav-link active text-black" to="/login">Login</Link>
-        </p>
+          </p>
+          <p onClick={resetPassword}>
+            Reset Password
+          </p>
         <div className='horizontal-divider'>
           <div className='line-left' />
           <p>or</p>

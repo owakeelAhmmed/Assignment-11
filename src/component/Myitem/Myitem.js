@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Loding from '../Shared/Loading/Loding';
 import './Myitem.css';
 
 
 
 
 const Myitem = () => {
-    const [products, setProducts] = useState([]);
-
+    const [products, setProducts, loading] = useState([]);
+    console.log(products);
 
 
 
@@ -37,18 +38,21 @@ const Myitem = () => {
                 })
         }
      }
-
+if (loading) {
+        return <Loding/>
+    }
 
     
     return (
        <div className="container myitem-cont ">
-            <h1 className="mb-5"> <span className="first-text-style">Available</span>  <span className="text-style">Products</span>: { products.length }</h1>
+            <h1 className="mb-5"> <span className="
+            ">Available</span>  <span className="text-style">Products</span>: {products.length}</h1>
             
                 <div className="row">
             {
             products.map(product =>
-                <div className="card-container col-sm-12 col-lg-4 mb-5" key={product.id} product={product}>
-                        <div className="item-card p-3 card" style={{ width: "18rem"}} >
+                <div className=" col-sm-12 col-lg-4 mb-5" key={product.id} product={product}>
+                        <div className="card-container item-card p-3 card"  >
                                 <div className="item-ima">
                                     <img className='rounded img-fluid p-3' src={product.picture} alt="" />
                                 </div>

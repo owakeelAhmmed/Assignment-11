@@ -8,10 +8,14 @@ const Additem = () => {
 
     const handleAddUser = event => {
         event.preventDefault();
+        const images = event.target.images.value;
         const name = event.target.name.value;
-        const email = event.target.email.value; 
+        const suppliername = event.target.suppliername.value; 
+        const price = event.target.price.value; 
+        const quantity = event.target.quantity.value; 
+        const description = event.target.description.value; 
 
-        const user = { name, email};
+        const user = { images, name, suppliername, price, quantity, description};
        
         //send data to the server
         fetch('http://localhost:4000/user', {
@@ -36,19 +40,38 @@ const Additem = () => {
         <div className="container add-container d-flex justify-content-center">
             
             
-            <form onSubmit={handleAddUser} className="form-container">
+
+            <div className=''>
+                
+                <h2 className='mb-5'>
+                    Add Your Item....
+                </h2>
+            
+                <form onSubmit={handleAddUser} className="form-container">
+                
                 <div className="mb-3">
-                  
-                    <input type="name" className="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your name" required />
+                    <input type="images" className="form-control" id="images" aria-describedby="emailHelp" placeholder="Enter your images url" required />
                 </div>
                 <div className="mb-3">
-                    
-                    <input type="email"  className="form-control" id="email" placeholder="Enter your email" aria-describedby="emailHelp" required />
+                    <input type="name" className="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your product name" required />
+                </div>
+                <div className="mb-3">
+                    <input type="suppliername"  className="form-control" id="suppliername" placeholder="Enter your suppliername" aria-describedby="emailHelp" required />
+                </div>
+                <div className="mb-3">
+                    <input type="price"  className="form-control" id="price" placeholder="Enter your price" aria-describedby="emailHelp" required />
+                </div>
+                <div className="mb-3">
+                    <input type="quantity"  className="form-control" id="quantity" placeholder="Enter your Quantity" aria-describedby="emailHelp" required />
+                </div>
+                <div className="mb-3">
+                    <input type="description"  className="form-control" id="description" placeholder="Enter your Description" aria-describedby="emailHelp" required />
                 </div>
                 
                 
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
+            </div>
         </div>
     );
 };

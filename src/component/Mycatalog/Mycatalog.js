@@ -53,7 +53,7 @@ const Mycatalog = () => {
             {
             products.slice(0,10).map(product =>
                 <div className=" mb-5 col-md-6 col-lg-4" key={product.id} product={product}>
-                        <div className="item-card p-3 card" style={{ width: "18rem"}} >
+                        <div className="card-container item-card p-3 card" style={{ width: "22rem"}} >
                                 <div className="product-img">
                                     <img className=' rounded img-fluid p-3' src={product.picture} alt="" />
                                 </div>

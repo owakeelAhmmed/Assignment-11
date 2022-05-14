@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom';
 import Reviews from '../Reviews/Reviews';
 import CountactUs from '../ContactUs/CountactUs';
 import React, { useEffect, useState } from 'react';
+import Loding from '../Shared/Loading/Loding';
+
+
+
 
 const Home = () => {
-    const [products, setProducts] = useState([]);
+    const [products, setProducts, loading] = useState([]);
 
 
 
@@ -18,7 +22,7 @@ const Home = () => {
     }, []);
     
     const handleUserDelete = id => {
-        console.log('deleted',id);
+        console.log('deleted', id);
         const proceed = window.confirm('Are you sure you want to delete this item?')
         if (proceed) {
             console.log('delete id', id);
@@ -26,18 +30,20 @@ const Home = () => {
             fetch(url, {
                 method: 'DELETE',
             })
-            .then(response => response.json())
-                .then(data => { 
+                .then(response => response.json())
+                .then(data => {
                     if (data.deletedCount > 0) {
                         console.log("deleted");
                         const remaining = products.filter(user => user._id !== id);
                         setProducts(remaining);
-                   }
+                    }
                 })
         }
-     }
+    };
 
-
+  if (loading) {
+        return <Loding/>
+    }
 
 
 
@@ -71,7 +77,7 @@ const Home = () => {
                             
                         <div className="home-card-container col-sm-12 col-lg-4" key={product.id} product={product}>
                             <div >
-                                <div className="card card-box mb-4" style={{ width: "18rem"}} >
+                                <div className="card card-box mb-4" style={{ width: "22rem"}} >
                                         <div className="card-img">
                                             <img className='rounded img-fluid p-3' src={product.picture} alt="" />
                                         </div>
