@@ -18,7 +18,6 @@ const Mycatalog = () => {
 
 
     const handleUserDelete = id => {
-        console.log('deleted',id);
         const proceed = window.confirm('Are you sure you want to delete this item?')
         if (proceed) {
             console.log('delete id', id);

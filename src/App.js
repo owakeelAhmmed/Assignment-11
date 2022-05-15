@@ -12,6 +12,8 @@ import Additem from './component/Additem/Additem';
 import UpdateUser from './component/UpdateUser/UpdateUser';
 import Blog from './component/Blog/Blog';
 import Mycatalog from './component/Mycatalog/Mycatalog';
+import Deliverproduct from './component/Deliverproduct/Deliverproduct';
+
 
 
 
@@ -47,9 +49,11 @@ function App() {
           </RequirAuth>
         }/> 
         <Route path="/blog" element={<Blog/>}/> 
+        <Route path="/deliverproduct/:id" element={<Deliverproduct/>}/> 
         <Route path="/*" element={<Notfound/>}/>
       </Routes>
-      <Footer/>
+      
+      <Footer />
     </div>
   );
 }
