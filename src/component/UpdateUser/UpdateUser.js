@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './UpdateUser.css';
+
+
+
+
+
 const UpdateUser = () => {
     const { id } = useParams();
     const [user, setUser] = useState({});
@@ -61,7 +66,7 @@ const UpdateUser = () => {
                         </div>
                            
                         <div className='d-flex justify-content-between'>
-                                <button className="btn btn-danger">Delivered</button>
+                                <Link to={`/deliverproduct/${user._id}`}><button className='btn btn-primary'>Delivery</button></Link>
                             
                     </div>
                     
