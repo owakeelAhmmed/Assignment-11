@@ -7,7 +7,7 @@ const UpdateUser = () => {
 
     useEffect(() => {
         
-        fetch(`http://localhost:4000/user/${id}`)
+        fetch(`https://vast-plateau-84088.herokuapp.com/user/${id}`)
         .then(response => response.json())
         .then(data => setUser(data))
     }, []);
@@ -23,7 +23,7 @@ const UpdateUser = () => {
             const quantity = { number };
        
             //send data to the server
-            fetch(`http://localhost:4000/user/${id}`, {
+            fetch(`https://vast-plateau-84088.herokuapp.com/user/${id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

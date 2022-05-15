@@ -18,7 +18,7 @@ const Additem = () => {
         const user = { images, name, suppliername, price, quantity, description};
        
         //send data to the server
-        fetch('http://localhost:4000/user', {
+        fetch('https://vast-plateau-84088.herokuapp.com/user', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

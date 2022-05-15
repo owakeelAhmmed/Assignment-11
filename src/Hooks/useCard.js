@@ -4,7 +4,7 @@ const useCard = () => {
     const [products, setProducts] = useState([]);
     console.log(products);
     useEffect(() => {
-        fetch('http://localhost:4000/user')
+        fetch('https://vast-plateau-84088.herokuapp.com/user')
         .then(Response => Response.json())
         .then(data => setProducts(data))
         

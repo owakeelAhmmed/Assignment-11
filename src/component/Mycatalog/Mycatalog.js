@@ -11,7 +11,7 @@ const Mycatalog = () => {
     const [products, setProducts] = useState([]);
     
     useEffect(() => {
-        fetch('http://localhost:4000/user')
+        fetch('https://vast-plateau-84088.herokuapp.com/user')
             .then(response => response.json())
             .then(data => setProducts(data));
     }, []);
@@ -22,7 +22,7 @@ const Mycatalog = () => {
         const proceed = window.confirm('Are you sure you want to delete this item?')
         if (proceed) {
             console.log('delete id', id);
-            const url = `http://localhost:4000/user/${id}`;
+            const url = `https://vast-plateau-84088.herokuapp.com/user/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })
